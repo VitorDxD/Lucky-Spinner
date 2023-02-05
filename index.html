@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <div id="header">Roleta de Sorteio</div>
+
+        <div id="roleta-container">
+            <ul id="roleta">
+                <canvas id="myChart"></canvas>
+            </ul>
+        </div>
+
+            <form id="form" method="get">
+                <label for="item-text">Digite aqui: </label>
+                <input type="text" id="item-text">
+                <label for="item-color">Escolha a cor: </label>
+                <input type="color" id="item-color">
+                <div id="btns">
+                    <button class="btn" id="btn-add">Adicionar</button>
+                    <button class="btn" id="btn-rotate">Girar</button>
+                </div>
+            </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

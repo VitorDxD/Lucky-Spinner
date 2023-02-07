@@ -1,0 +1,51 @@
+@media (max-width: 730px){
+    *{
+        font-size: 55%;
+    }
+    @media (max-width: 520px){
+        #roleta{
+            height: 30rem;
+            width: 30rem;
+        }
+        @media (max-width: 470px){
+            #container{
+                height: 80vh;
+                grid-template-rows: 1fr 4fr 1fr;
+                grid-template-areas: 
+                    'header header'
+                    'roleta roleta'
+                    'form form';
+            }
+            #form{
+                padding: 0;
+            }
+            input{
+                width: 90%;
+                margin-bottom: 0.5rem;
+                display: block;
+                margin: auto;
+            }
+            label{
+                margin-left: 2.35rem;
+            }
+            #btns{
+                justify-content: space-around;
+            }
+            .btn{
+                margin-bottom: 1.2rem;
+            }
+            #header{
+                font-size: 3.8rem;
+            }
+            @media (max-width: 340px){
+                #header{
+                    font-size: 2.8rem;
+                }
+                #roleta{
+                    height: 25rem;
+                    width: 25rem;
+                }
+            }
+        }
+    }
+}
